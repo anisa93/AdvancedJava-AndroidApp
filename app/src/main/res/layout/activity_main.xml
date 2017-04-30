@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.student.sample.student.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:background="@color/colorPrimaryDark"
+
+            android:text="Student Course Tracker"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/sid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:ems="10"
+            android:hint="Student ID"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/cid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:ems="10"
+            android:hint="Course ID"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/sName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:ems="10"
+            android:hint="Student Name"
+            android:inputType="textPersonName" />
+
+        <Switch
+            android:id="@+id/sSTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="status" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="Add Student" />
+
+        <Button
+            android:id="@+id/sdtls_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="View Student Details" />
+
+        <Button
+            android:id="@+id/upd_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="Update student Status" />
+
+        <Button
+            android:id="@+id/del_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="Delete Student" />
+
+        <Button
+            android:id="@+id/viewall_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="View All Students" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
